@@ -4,7 +4,9 @@ module Lita
     class Tell < Handler
       route(/^tell "(.+)" to (.+)/) do |response|
         message, recipient = response.matches.first
-        response.reply_in_room(recipient, message)
+        user = Lita::User.fuzzy_find(recipient)
+        room = Lita::Room.fuzzy_find(recipient)
+        response.reply_in_room(user, room, message)
         response.reply("Your message has been sent")
       end
     end
