@@ -30,7 +30,7 @@ module Lita
       end
 
       def room
-        @room ||= Lita::Room.fuzzy_find(recipient)
+        @room ||= Lita::Room.find_by_name(recipient)
       end
     end
   end
