@@ -1,11 +1,11 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-tell"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Charly Palencia"]
   spec.email         = ["ingcharlypalencia@gmail.com"]
-  spec.description   = "TODO: Add a description"
-  spec.summary       = "TODO: Add a summary"
-  spec.homepage      = "TODO: Add a homepage"
+  spec.description   = "lita plugin to send a user or in a room"
+  spec.summary       = ""
+  spec.homepage      = "https://github.com/charly-palencia/lita-tell"
   spec.license       = "TODO: Add a license"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 

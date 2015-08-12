@@ -1,14 +1,19 @@
-
 module Lita
   module Handlers
     class Tell < Handler
-      route(/^tell "(.+)" to (.+)/) do |response|
+
+      route(/^tell ["“](.+)["”] to (.+)/) do |response|
         message, recipient = response.matches.first
-        user = Lita::User.fuzzy_find(recipient)
-        room = Lita::Room.fuzzy_find(recipient)
-        response.reply_in_room(user, room, message)
-        response.reply("Your message has been sent")
+        interactor = Interactors::CreateSource.new(recipient).perform
+
+        if interactor.success?
+          response.reply_with_source(interactor.source, message)
+          response.reply("Your message has been sent")
+        else
+          response.reply(interactor.error)
+        end
       end
+
     end
 
     Lita.register_handler(Tell)

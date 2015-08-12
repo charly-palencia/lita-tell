@@ -1,7 +1,6 @@
 module Lita
   class Message
-    def reply_in_room(user, channel, *strings)
-      source = Lita::Source.new(user: user, room: channel)
+    def reply_with_source(source, *strings)
       @robot.send_messages(source, *strings)
     end
   end

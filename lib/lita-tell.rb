@@ -6,6 +6,7 @@ Lita.load_locales Dir[File.expand_path(
 
 require_relative "lita/message.rb"
 require_relative "lita/response.rb"
+require "lita/interactors/create_source"
 require "lita/handlers/tell"
 
 Lita::Handlers::Tell.template_root File.expand_path(
