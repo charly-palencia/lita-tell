@@ -3,7 +3,7 @@ Gem::Specification.new do |spec|
   spec.version       = "0.1.4"
   spec.authors       = ["Charly Palencia"]
   spec.email         = ["ingcharlypalencia@gmail.com"]
-  spec.description   = "lita plugin to send a user or in a room"
+  spec.description   = "lita plugin to send a message to a user or a room"
   spec.summary       = ""
   spec.homepage      = "https://github.com/charly-palencia/lita-tell"
   spec.license       = "TODO: Add a license"
