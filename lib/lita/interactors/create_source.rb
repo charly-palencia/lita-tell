@@ -4,10 +4,6 @@ module Lita
       attr :recipient
       attr_reader :error
 
-      def self.perform(recipient)
-        new(recipient).source
-      end
-
       def initialize(recipient)
         @recipient = recipient
       end

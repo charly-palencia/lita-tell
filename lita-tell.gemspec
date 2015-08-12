@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-tell"
-  spec.version       = "0.1.2"
+  spec.version       = "0.1.3"
   spec.authors       = ["Charly Palencia"]
   spec.email         = ["ingcharlypalencia@gmail.com"]
   spec.description   = "lita plugin to send a user or in a room"
