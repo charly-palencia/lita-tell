@@ -5,7 +5,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/charly-palencia/lita-tell/badge.svg?branch=master&service=github)](https://coveralls.io/github/charly-palencia/lita-tell?branch=master)
 
-Lita plugin to send a user or in a room
+Lita plugin to send a message to a specific user or  room
 
 ## Installation
 
@@ -18,4 +18,14 @@ gem "lita-tell"
 
 ## Usage
 
+``` shell
+lita tell "message" to [user|room]
+```
 
+## Example
+
+``` shell
+lita tell "message" to jhon_doe
+
+lita tell "message" to project_one
+```
