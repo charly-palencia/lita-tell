@@ -25,7 +25,7 @@ lita tell "message" to [user|room]
 ## Example
 
 ``` shell
-lita tell "message" to jhon_doe
+lita tell jhon_doe hi sir!
 
-lita tell "message" to project_one
+lita say "hi sir!" to jhon_doe
 ```
