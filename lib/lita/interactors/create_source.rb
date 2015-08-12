@@ -1,11 +1,11 @@
 module Lita
   module Interactors
     class CreateSource
-      attr :recipient
-      attr_reader :error
+      attr_reader :recipient, :message, :error
 
-      def initialize(recipient)
-        @recipient = recipient
+      def initialize(recipient, message)
+        @recipient = recipient.gsub(/@|#/, '')
+        @message = message
       end
 
       def perform
@@ -15,12 +15,12 @@ module Lita
 
       def source
         Lita::Source.new(user: user, room: room)
-        rescue ArgumentError => e
-          @error = e.message
+      rescue ArgumentError => e
+        @error = e.message
       end
 
       def success?
-        error.nil? ? true : false
+        error.nil?
       end
 
       private

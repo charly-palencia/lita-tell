@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe Lita::Interactors::CreateSource do
-  subject(:instance){ described_class.new(recipient) }
+  subject(:instance){ described_class.new(recipient, 'hi!') }
 
   describe "#tell" do
     before do

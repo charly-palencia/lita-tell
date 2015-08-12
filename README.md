@@ -15,17 +15,9 @@ Add lita-tell to your Lita instance's Gemfile:
 gem "lita-tell"
 ```
 
-
 ## Usage
 
-``` shell
-lita tell "message" to [user|room]
 ```
-
-## Example
-
-``` shell
-lita tell jhon_doe hi sir!
-
-lita say "hi sir!" to jhon_doe
+lita tell [user|room] hi sir!
+lita say "hi sir!" to [user|room]
 ```
