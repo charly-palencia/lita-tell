@@ -47,5 +47,4 @@ describe Lita::Interactors::CreateSource do
     end
 
   end
-
 end
