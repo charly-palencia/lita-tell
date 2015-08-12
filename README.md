@@ -1,6 +1,11 @@
 # lita-tell
+[![Code Climate](https://codeclimate.com/github/charly-palencia/lita-tell/badges/gpa.svg)](https://codeclimate.com/github/charly-palencia/lita-tell)
 
-TODO: Add a description of the plugin.
+[![Build Status](https://travis-ci.org/charly-palencia/lita-tell.svg?branch=master)](https://travis-ci.org/charly-palencia/lita-tell)
+
+[![Coverage Status](https://coveralls.io/repos/charly-palencia/lita-tell/badge.svg?branch=master&service=github)](https://coveralls.io/github/charly-palencia/lita-tell?branch=master)
+
+Lita plugin to send a user or in a room
 
 ## Installation
 
@@ -10,10 +15,7 @@ Add lita-tell to your Lita instance's Gemfile:
 gem "lita-tell"
 ```
 
-## Configuration
-
-TODO: Describe any configuration attributes the plugin exposes.
 
 ## Usage
 
-TODO: Describe the plugin's features and how to use them.
+
